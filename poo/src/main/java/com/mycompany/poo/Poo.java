@@ -1,6 +1,7 @@
 
 package com.mycompany.poo;
 
+import people.Character;
 
 public class Poo {
 
@@ -9,23 +10,12 @@ public class Poo {
         homero.saySomething();
         Character bart = new Character("bart", 12, 'M', "Ay caramba" );
         bart.saySomething();
-    }
-    
-    static class Character{
-        String name;
-        int age;
-        char gender;
-        String phrase;
-
-        public Character(String name, int age, char gender, String phrase) {
-            this.name = name;
-            this.age = age;
-            this.gender = gender;
-            this.phrase = phrase;
-        }
         
-        void saySomething(){
-            System.out.println(this.phrase);
-        }
+        Character apu = new Character();
+        apu.setName("apu");
+        apu.setPhrase("vuelvas prontos");
+        
+        apu.saySomething();
     }
-}
+    }
+
